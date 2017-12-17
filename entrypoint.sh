@@ -7,4 +7,4 @@ fi
 COMMAND="cassandra-web --hosts $CASSANDRA_IP --port $CASSANDRA_PORT --username $CASSANDRA_USERNAME --password $CASSANDRA_PASSWORD"
 
 echo "Wait for Cassandra ..."
-/wait-for.sh "$IP:$PORT" -- $COMMAND
+/wait-for.sh "$CASSANDRA_IP:$CASSANDRA_PORT" -- $COMMAND
